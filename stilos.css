@@ -1,6 +1,7 @@
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f9;
+    background-color: #121212; /* Fondo oscuro */
+    color: #e0e0e0; /* Color de texto claro */
+    font-family: 'Arial', sans-serif; /* Fuente simple y legible */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -9,54 +10,43 @@ body {
 }
 
 form {
-    background: white;
+    background-color: #1e1e1e; /* Fondo del formulario */
     padding: 20px;
     border-radius: 8px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
     width: 300px;
-}
-
-h2 {
     text-align: center;
-    color: #333;
 }
 
 label {
-    display: block;
+    font-size: 1.2em;
     margin-bottom: 10px;
-    font-weight: bold;
-    color: #555;
 }
 
-input[type="number"], 
-input[type="text"] {
+.caja, .cajas {
     width: 100%;
     padding: 10px;
-    margin: 5px 0 20px;
-    border: 1px solid #ddd;
+    margin: 10px 0;
+    border: 1px solid #333; /* Borde oscuro */
     border-radius: 4px;
-    font-size: 16px;
-    transition: border-color 0.3s;
+    background-color: #2a2a2a; /* Fondo de los inputs */
+    color: #e0e0e0; /* Color de texto en inputs */
 }
 
-input[type="number"]:focus, 
-input[type="text"]:focus {
-    border-color: #007bff;
-    outline: none;
+.caja::placeholder, .cajas::placeholder {
+    color: #888; /* Color del placeholder */
 }
 
-input[type="submit"] {
-    background-color: #007bff;
-    color: white;
-    padding: 10px;
+.boton {
+    background-color: #6200ea; /* Color del botón */
+    color: #fff; /* Texto blanco */
     border: none;
+    padding: 10px;
     border-radius: 4px;
     cursor: pointer;
-    font-size: 16px;
-    width: 100%;
     transition: background-color 0.3s;
 }
 
-input[type="submit"]:hover {
-    background-color: #0056b3;
+.boton:hover {
+    background-color: #3700b3; /* Color del botón al pasar el mouse */
 }
