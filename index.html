@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DNI</title>
+    <link rel="stylesheet" href="stilos.css">
+    <script src="dni.js"></script>
+</head>
+<body>
+    <form method="get" name="registro" onsubmit="return dni2(this)" action="index.html">
+        <label>Ingresa el número sin la letra del DNI</label>
+        <br><br>
+        <input type="number" id="numero" class="caja"  placeholder="DNI">
+        <br><br>
+        <input type="text" id="letra" class="cajas"  placeholder="Letra">
+        <br><br>
+        <input class="boton" id="enviar" type="submit" value="Enviar">
+    </form>
+</body>
+</html>
